@@ -98,6 +98,11 @@ class SeatMaker:
             seat['bg'] = 'green'
         else:
             seat['bg'] = '#D9D9D9'
+        seat_position = seat.grid_info()
+        print(seat_position["column"])
+        print(seat_position["row"])
+
+        
 
     def __init__(self, master, column):
         self.bg = '#D9D9D9'
